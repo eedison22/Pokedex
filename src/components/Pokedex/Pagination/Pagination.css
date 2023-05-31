@@ -1,0 +1,47 @@
+.pagination {
+  display: flex;
+  gap: 2px;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+  justify-content:center;
+}
+  
+  button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .back {
+    background-color: #1f2937;
+    color: #ffffff;
+  }
+  
+  .back:hover {
+    background-color: #374151;
+  }
+  
+  .pages {
+    background-color: #ffffff;
+    color: #1f2937;
+  }
+  
+  .pages:hover {
+    background-color: #1f2937;
+    color: #ffffff;
+  }
+  
+  .next {
+    background-color: #1f2937;
+    color: #ffffff;
+  }
+  
+  .next:hover {
+    background-color: #ffffff;
+    color: #1f2937;
+  }
+  
+  button:focus {
+    outline: none;
+  }
