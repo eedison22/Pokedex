@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import UserNameForm from '../../components/Home/userNameForm/UserNameForm'
+import UserNameForm from '../../components/Home/UserNameForm/UserNameForm'
 
 import './Home.css'
 import { UserNameConext } from '../../context/UserNameContext';
