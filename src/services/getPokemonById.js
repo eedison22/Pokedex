@@ -19,6 +19,7 @@ export const getPokemonById = async (id) => {
             types: pokemonData.types.map(typeInfo => typeInfo.type.name),
             stats: pokemonData.stats.map(statInfo => ({ name: statInfo.stat.name, value:statInfo.base_stat, })),
             image: getPokemonImg(pokemonData.sprites),
+            hability: pokemonData.abilities.map(abilityInfo => abilityInfo.ability.name),
         }
         return adaptedPokemon;
 

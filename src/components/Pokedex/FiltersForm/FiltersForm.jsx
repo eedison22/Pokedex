@@ -4,7 +4,7 @@ import { Form } from 'react-router-dom'
 import './FiltersForm.css'
 import { getAllTypes } from '../../../services/getAllTypes'
 
-const FiltersForm = (nameInitial, typeInitial) => {
+const FiltersForm = ({nameInitial, typeInitial}) => {
     const [types, setTypes] = useState([])
     const [nameValue, setNameValue] = useState(nameInitial);
     const [typeValue, setTypeValue] = useState(typeInitial);
@@ -18,10 +18,11 @@ const FiltersForm = (nameInitial, typeInitial) => {
     }, []);
 
     useEffect(()=> {
-        setNameValue(nameInitial)
-        setTypeValue(typeInitial)
+        setNameValue(nameInitial);
+        setTypeValue(typeInitial);
+        
     }, [nameInitial, typeInitial]);
-    
+        
     const handleTypeChange = (e) => {
         const newTypeValue = e.target.value;
         setTypeValue(newTypeValue);
